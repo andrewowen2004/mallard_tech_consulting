@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mallard Tech Consulting - Free Tech Consulting for Real Experience</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .logo {
+            font-size: 48px;
+            font-weight: 700;
+            color: #001f3f;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+        
+        .tagline {
+            font-size: 18px;
+            color: #666;
+            font-weight: 300;
+        }
+        
+        .value-prop {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+        
+        .value-prop h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #001f3f;
+        }
+        
+        .value-prop p {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+        
+        .services {
+            margin-bottom: 40px;
+        }
+        
+        .services h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #001f3f;
+        }
+        
+        .service {
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .service:last-child {
+            border-bottom: none;
+        }
+        
+        .service h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .service p {
+            font-size: 17px;
+            color: #666;
+        }
+        
+        .ideal-partners {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        
+        .ideal-partners h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #001f3f;
+        }
+        
+        .ideal-partners p {
+            font-size: 17px;
+            color: #555;
+        }
+        
+        .cta-section {
+            margin-bottom: 40px;
+        }
+        
+        .cta-box {
+            background: #fff;
+            border: 2px solid #001f3f;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+        
+        .cta-box h3 {
+            font-size: 24px;
+            margin-bottom: 12px;
+            color: #001f3f;
+        }
+        
+        .cta-box p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+            color: #333;
+            font-size: 14px;
+        }
+        
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: Arial, sans-serif;
+        }
+        
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+        
+        button {
+            background: #001f3f;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        button:hover {
+            background: #001529;
+        }
+        
+        button:disabled {
+            background: #999;
+            cursor: not-allowed;
+        }
+        
+        .success-message {
+            display: none;
+            background: #d4edda;
+            color: #155724;
+            padding: 15px;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+        
+        .error-message {
+            display: none;
+            background: #f8d7da;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+        
+        footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid #e0e0e0;
+            color: #999;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 36px;
+            }
+            
+            .value-prop h2 {
+                font-size: 24px;
+            }
+            
+            .services h2 {
+                font-size: 28px;
+            }
+            
+            .cta-box {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">MTC</div>
+            <div class="tagline">Mallard Tech Consulting</div>
+        </header>
+        
+        <section class="value-prop">
+            <h2>Free Tech Consulting. Real Experience.</h2>
+            <p>We are a student-run consulting group that provides free technology consulting to small businesses, nonprofits, and student organizations. In return, our consultants gain real-world, hands-on experience by working on live projects that deliver measurable impact for our partners.</p>
+            <p><strong>Our model creates a win-win:</strong> organizations receive high-quality technical support, and students build practical consulting and implementation experience.</p>
+        </section>
+        
+        <section class="services">
+            <h2>What We Offer</h2>
+            
+            <div class="service">
+                <h3>Data Solutions</h3>
+                <p>Turn your data into actionable insights. We help organizations make sense of their data through analysis, visualization, and proper database systems. Whether you're drowning in spreadsheets, need to understand trends, or want automated reporting, we build custom solutions that fit your needs.</p>
+            </div>
+            
+            <div class="service">
+                <h3>Salesforce for Nonprofit Organizations</h3>
+                <p>Implement and configure Salesforce's free Nonprofit Success Pack to manage your donors, volunteers, and programs. Salesforce offers 10 free licenses to qualifying nonprofits - we help you take advantage of this powerful tool without the enterprise price tag.</p>
+            </div>
+            
+            <div class="service">
+                <h3>Digital Customer Experience Audit & Optimization</h3>
+                <p>Make it easy for customers to find you, trust you, and do business with you. We audit your digital presence from a customer's perspective and implement fixes that directly impact how people discover and interact with your organization online.</p>
+            </div>
+        </section>
+        
+        <section class="ideal-partners">
+            <h3>Who Should Reach Out</h3>
+            <p>Nonprofits, small businesses with minimal current tech infrastructure, and large or established student clubs looking for technical solutions.</p>
+        </section>
+        
+        <section class="cta-section">
+            <div class="cta-box">
+                <h3>Organizations: Get Free Tech Consulting</h3>
+                <p>After reaching out, expect a response email requesting a brief 20-minute call to narrow down the problem and see if we're a good fit.</p>
+                
+                <form id="orgForm">
+                    <div class="form-group">
+                        <label for="orgName">Organization Name *</label>
+                        <input type="text" id="orgName" name="orgName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="orgType">Organization Type *</label>
+                        <select id="orgType" name="orgType" required>
+                            <option value="">Select type...</option>
+                            <option value="nonprofit">Nonprofit</option>
+                            <option value="small-business">Small Business</option>
+                            <option value="student-club">Student Club/Organization</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="orgContact">Your Name *</label>
+                        <input type="text" id="orgContact" name="orgContact" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="orgEmail">Email *</label>
+                        <input type="email" id="orgEmail" name="orgEmail" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="orgMessage">Brief Description of Your Tech Need *</label>
+                        <textarea id="orgMessage" name="orgMessage" required></textarea>
+                    </div>
+                    
+                    <button type="submit">Submit Request</button>
+                    <div class="success-message" id="orgSuccess">Thank you! We'll reach out shortly to schedule a call.</div>
+                    <div class="error-message" id="orgError">Please contact us directly at ao9@iu.edu</div>
+                </form>
+            </div>
+            
+            <div class="cta-box">
+                <h3>Students: Gain Real Consulting Experience</h3>
+                <p>Want real consulting experience? Get on a project, learn from guest speakers, other members, and participate in organizational meetings.</p>
+                
+                <form id="studentForm">
+                    <div class="form-group">
+                        <label for="studentName">Your Name *</label>
+                        <input type="text" id="studentName" name="studentName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="studentEmail">Email *</label>
+                        <input type="email" id="studentEmail" name="studentEmail" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="studentYear">Year in School *</label>
+                        <select id="studentYear" name="studentYear" required>
+                            <option value="">Select year...</option>
+                            <option value="freshman">Freshman</option>
+                            <option value="sophomore">Sophomore</option>
+                            <option value="junior">Junior</option>
+                            <option value="senior">Senior</option>
+                            <option value="graduate">Graduate Student</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="studentInterest">Why are you interested? *</label>
+                        <textarea id="studentInterest" name="studentInterest" required></textarea>
+                    </div>
+                    
+                    <button type="submit">Express Interest</button>
+                    <div class="success-message" id="studentSuccess">Thank you! We'll be in touch soon.</div>
+                    <div class="error-message" id="studentError">Please contact us directly at ao9@iu.edu</div>
+                </form>
+            </div>
+        </section>
+        
+        <footer>
+            <p>Mallard Tech Consulting | Contact: ao9@iu.edu</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Organization form handler
+        document.getElementById('orgForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Create mailto link
+            const subject = encodeURIComponent(`Tech Consulting Request - ${data.orgName}`);
+            const body = encodeURIComponent(
+                `Organization: ${data.orgName}\n` +
+                `Type: ${data.orgType}\n` +
+                `Contact: ${data.orgContact}\n` +
+                `Email: ${data.orgEmail}\n\n` +
+                `Tech Need:\n${data.orgMessage}`
+            );
+            
+            // Open email client
+            window.location.href = `mailto:ao9@iu.edu?subject=${subject}&body=${body}`;
+            
+            // Show success message
+            document.getElementById('orgSuccess').style.display = 'block';
+            this.reset();
+            
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                document.getElementById('orgSuccess').style.display = 'none';
+            }, 5000);
+        });
+        
+        // Student form handler
+        document.getElementById('studentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Create mailto link
+            const subject = encodeURIComponent(`Student Interest - ${data.studentName}`);
+            const body = encodeURIComponent(
+                `Name: ${data.studentName}\n` +
+                `Email: ${data.studentEmail}\n` +
+                `Year: ${data.studentYear}\n\n` +
+                `Interest:\n${data.studentInterest}`
+            );
+            
+            // Open email client
+            window.location.href = `mailto:ao9@iu.edu?subject=${subject}&body=${body}`;
+            
+            // Show success message
+            document.getElementById('studentSuccess').style.display = 'block';
+            this.reset();
+            
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                document.getElementById('studentSuccess').style.display = 'none';
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
